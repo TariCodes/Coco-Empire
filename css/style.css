@@ -79,9 +79,12 @@ img {
   color: orangered;
 }
 .inner-utils i {
-  padding: 0 10px;
+  padding: 0 5px;
   cursor: pointer;
   font-size: 1rem;
+}
+.search-toggle{
+  display: none;
 }
 .toggler {
   display: none;
@@ -272,11 +275,13 @@ form textarea {
 }
 .footer-links.flex{
   flex-flow: column wrap;
-  text-transform: uppercase;
+}
+.footer-links h4{
+text-transform: uppercase;
 }
 .footer-links a{
-  font-size: 1rem;
-  color: var(--text-color);
+  font-size: .85rem;
+  color: #fff;
 }
 .footer-links a:hover{
   color: var(--link-hover);
@@ -314,9 +319,9 @@ form textarea {
 
 
 /* Media Queries */
-@media (max-width: 500px) {
+@media screen and (max-width:27rem) {
   .top-header {
-    display: none;
+    display:none;
   }
   .inner-header {
     padding: 1.2rem 0;
@@ -328,6 +333,9 @@ form textarea {
   .search-container,
   .navbar {
     display: none;
+  }
+  .search-toggle{
+    display: inline-block;
   }
   .toggler {
     display: inline;
